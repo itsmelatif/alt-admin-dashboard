@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { AltAdminDashboardComponent } from './alt-admin-dashboard.component';
+import { AltAdminDashboardRoutingModule } from './alt-admin-dashboard-routing.module';
+import { AltSharedModuleModule } from 'projects/alt-shared-module/src/public-api';
 
 
 
@@ -8,6 +10,8 @@ import { AltAdminDashboardComponent } from './alt-admin-dashboard.component';
     AltAdminDashboardComponent
   ],
   imports: [
+    AltAdminDashboardRoutingModule,
+    AltSharedModuleModule
   ],
   exports: [
     AltAdminDashboardComponent
