@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MapsRoutingModule } from './maps-routing.module';
 import { MapsPageComponent } from './components/maps-page/maps-page.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { MapsPageComponent } from './components/maps-page/maps-page.component';
   ],
   imports: [
     CommonModule,
-    MapsRoutingModule
+    MapsRoutingModule,
+    GoogleMapsModule
   ]
 })
 export class MapsModule { }
